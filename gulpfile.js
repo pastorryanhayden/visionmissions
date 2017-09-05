@@ -128,19 +128,20 @@ gulp.task('imagemin', function () {
 /**
  * eslint
  */
-gulp.task('eslint', function() {
-  return gulp.src(entry)
-  .pipe(eslint())
-  .pipe(eslint.format())
-  .pipe(eslint.failOnError());
-});
+// gulp.task('eslint', function() {
+//   return gulp.src(entry)
+//   .pipe(eslint())
+//   .pipe(eslint.format())
+//   .pipe(eslint.failOnError());
+// });
 
 /**
  * Webpack
  *
  * Bundle JavaScript files
  */
-gulp.task('webpack', ['eslint'], function () {
+// gulp.task('webpack', ['eslint'], function () {
+gulp.task('webpack', function () {
   return gulp.src(entry)
     .pipe(plumber())
     .pipe(named())
