@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+  <nav id="menu">
+    <section class="navinner">
+      <ul>
+        <li><a href="#">Some Link</a></li>
+        <li><a href="#">Some Link</a></li>
+        <li><a href="#">Some Link</a></li>
+        <li><a href="#">Some Link</a></li>
+        <li><a href="#">Some Link</a></li>
+        <li><a href="#">Some Link</a></li>
+      </ul>
+    </section>
+  </nav>
+    <main id="panel">
+        <div class="topmenu">
+          <h1><img src="{{ "/" | relative_url}}assets/svgs/Logo.svg" alt=""></h1>
+          <div class="topmenuright">
+          <a href="#" class="menuCTA">Give Now</a>
+          <a href="#" class="menu-toggle"><img src="{{ "/" | relative_url}}assets/svgs/MenuIcon.svg" alt=""></a>
+          </div>
+        </div><!--topmenu-->
+        {{ content }}
+    {% include footer.html %}
+  </main><!--panel-->
+
+  <script src="{{ "/" | relative_url}}assets/slideout.min.js"></script>
+  <script>
+  var slideout = new Slideout({
+    'panel': document.getElementById('panel'),
+    'menu': document.getElementById('menu'),    
+    'padding': 256,
+    'tolerance': 70,
+    'side': 'right'
+  });
+  document.querySelector('.menu-toggle').addEventListener('click', function() {
+        slideout.toggle();
+      });
+</script>
+  </body>
+
+
+</html>

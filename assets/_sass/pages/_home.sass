@@ -1,0 +1,79 @@
+section.hero
+	width: 100%
+	background: #3A6178
+	display: flex 
+	justify-content: center 
+	align-items: center 
+	flex-direction: column 
+	height: 540px
+	text-align: center
+	h1 
+		color: #E0DFDE
+		font-size: 50px
+		max-width: 85%
+		font-weight: 800
+		+tablet 
+			font-size: 60px
+			max-width: 1200px
+		margin-bottom: 0
+		padding-top: 40px
+	h3 
+		color: #E0DFDE
+		font-weight: 100
+		font-size: 30px
+		max-width: 80%
+		+tablet
+			font-size: 37px
+			max-width: 1000px
+section.hero-ctas
+	display: grid
+	grid-template-columns: 100%
+	grid-template-rows: 300px 300px 300px
+	+tablet
+		grid-template-columns: 1fr 1fr 1fr
+		grid-template-rows: 300px
+	.item 
+		display: flex 
+		justify-content: center 
+		align-items: center 
+		flex-direction: column 
+		color: #E0DFDE
+		text-align: center
+		padding: 40px 
+		p 
+			margin-bottom: 0
+		h3 
+			font-size: 30px
+			max-width: 360px
+			font-weight: 800
+			a 
+				color: #E0DFDE
+				text-decoration: none
+	.adventure
+	  background: url(../img/adventure.png) no-repeat center center
+	  background-size: cover 
+	.findOutMore
+	  background: url(../img/findOutMore.png) no-repeat center center
+	  background-size: cover 
+	.getInvolved
+	  background: url(../img/getInvolved.png) no-repeat center center
+	  background-size: cover 
+section.content 
+	padding: 50px 
+	background: linear-gradient(0deg, rgba(224, 223, 222, 0.97), rgba(224, 223, 222, 0.97)), url(../img/maplight.png)
+	.event
+		p.teaser
+			text-align: center
+			margin-bottom: 10px
+		h2
+			font-weight: 900
+			font-size: 45px
+			line-height: 60px
+			margin-bottom: 0
+			+tablet
+				font-size: 64px
+				line-height: 75px
+			text-align: Center
+			color: #3C4C55
+		h3
+			font-weight: 
