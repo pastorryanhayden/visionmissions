@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="{{page.body-class}}">
   <nav id="menu">
     <section class="navinner">
       <ul>
@@ -32,7 +32,7 @@
   <script>
   var slideout = new Slideout({
     'panel': document.getElementById('panel'),
-    'menu': document.getElementById('menu'),    
+    'menu': document.getElementById('menu'),
     'padding': 256,
     'tolerance': 70,
     'side': 'right'

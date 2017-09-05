@@ -1,0 +1,116 @@
+body.missions
+	section.hero
+		width: 100%
+		background: #3A6178
+		display: flex
+		justify-content: center
+		align-items: center
+		flex-direction: column
+		height: 1000px
+		text-align: center
+		h1
+			color: #E0DFDE
+			font-size: 20px
+			max-width: 85%
+			font-weight: 700
+			font-style: normal
+			+tablet
+				font-size: 65px
+				max-width: 1000px
+			margin-bottom: 20px
+			padding-top: 40px
+		h3
+			color: #E0DFDE
+			font-weight: 500
+			font-size: 20px
+			max-width: 80%
+			margin: 0
+			+tablet
+				font-size: 37px
+				max-width: 1000px
+	section.hero-ctas
+		display: grid
+		grid-template-columns: 100%
+		grid-template-rows: 300px 300px 300px
+		+tablet
+			grid-template-columns: 1fr 1fr 1fr
+			grid-template-rows: 300px
+		.item
+			display: flex
+			justify-content: center
+			align-items: center
+			flex-direction: column
+			color: #E0DFDE
+			text-align: center
+			img
+				height: 80px
+				width: auto
+			h3
+				font-size: 25px
+				max-width: 250px
+				font-weight: 500
+				letter-spacing: 1px
+				margin-top: 10px
+				a
+					color: #E0DFDE
+					text-decoration: none
+	section.eBook
+		padding: 50px
+		height: 500px
+		+tablet
+			padding: 40px 100px
+		+desktop
+			padding: 50px 200px
+		background: linear-gradient(0deg, rgba(192, 147, 99, 0.27), rgba(192, 147, 99, 0.27)), url(../img/missionsEbook.png)
+		.right
+			width: 100%
+			+tablet
+				width: 20%
+				float: right
+		.left
+			width: 100%
+			display: inline-block
+			+tablet
+				width: 80%
+				float: left
+			h3.eBookCTA
+				color: #5A453A
+				font-style: normal
+				font-weight: 600
+				line-height: normal
+				font-size: 20px
+				padding: 0
+				margin: 0
+				+tablet
+					font-size: 40px
+					line-height: 55px
+			h4
+				font-size: 25px
+				color: #5A453A
+				font-weight: 500
+				line-height: 40px
+			form
+				.fields
+					display: flex
+					.field
+						margin-right: 25px
+						label
+							font-size: 13px
+							color: #5A453A
+						input
+							width: 304px
+							padding: 10px
+							font-size: 15px
+							color: #C09363
+							font-weight: 500
+							border-radius: 5px
+				button
+					padding: 15px 24px
+					background: #3C4C55
+					border-radius: 5px
+					font-size: 15px
+					text-align: center
+					letter-spacing: .5px
+					text-transform: uppercase
+					color: #FFFFFF
+	section.schedule
