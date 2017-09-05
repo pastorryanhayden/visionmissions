@@ -56,17 +56,21 @@ body.missions
 					text-decoration: none
 	section.eBook
 		padding: 50px
-		height: 500px
+		height: 450px
 		+tablet
 			padding: 40px 100px
 		+desktop
 			padding: 50px 200px
-		background: linear-gradient(0deg, rgba(192, 147, 99, 0.27), rgba(192, 147, 99, 0.27)), url(../img/missionsEbook.png)
+		background: url(../img/missionsEbook.png)
 		.right
 			width: 100%
 			+tablet
 				width: 20%
 				float: right
+			img
+				display: none
+				+tablet
+					display: block
 		.left
 			width: 100%
 			display: inline-block
@@ -91,14 +95,19 @@ body.missions
 				line-height: 40px
 			form
 				.fields
-					display: flex
+					display: block
+					+tablet
+						display: flex
 					.field
 						margin-right: 25px
 						label
 							font-size: 13px
 							color: #5A453A
 						input
-							width: 304px
+							width: 100%
+							display: block
+							+tablet
+								width: 304px
 							padding: 10px
 							font-size: 15px
 							color: #C09363
@@ -114,3 +123,50 @@ body.missions
 					text-transform: uppercase
 					color: #FFFFFF
 	section.schedule
+		background: url(../img/missionsSchedule.png)
+		padding: 50px
+		height: auto
+		+tablet
+			padding: 40px 100px
+			height: 500px
+		+desktop
+			padding: 50px 200px
+			max-height: 350px
+		.leftSchedule
+			text-align: center
+			width: 100%
+			+tablet
+				width: 200px
+				float: left
+				margin-top: 40px
+			img
+				margin-bottom: 35px
+			a.call
+				background: #C09363
+				border-radius: 5px
+				color: white
+				padding: 12px 24px
+				text-transform: uppercase
+				text-decoration: none
+		.rightSchedule
+			width: 100%
+			margin-top: 20px
+			+tablet
+				width: 700px
+				float: right
+				margin-top: 40px
+			+desktop
+				margin-top: 40px
+			h2
+				font-size: 20px
+				+tablet
+					line-height: 40px
+					font-size: 50px
+				color: #E0DFDE
+			p
+				font-size: 16px
+				line-height: 24px
+				color: #E0DFDE
+				+tablet
+					line-height: 30px
+					font-size: 20px
