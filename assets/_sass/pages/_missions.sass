@@ -6,14 +6,20 @@ body.missions
 		justify-content: center
 		align-items: center
 		flex-direction: column
-		height: 1000px
+		height: auto
 		text-align: center
+		padding: 140px 20px 60px 20px
+		+tablet
+			height: auto
+		+desktop
+			height: 1000px
 		h1
 			color: #E0DFDE
 			font-size: 20px
 			max-width: 85%
 			font-weight: 700
 			font-style: normal
+			font-size: 50px
 			+tablet
 				font-size: 65px
 				max-width: 1000px
@@ -26,8 +32,10 @@ body.missions
 			max-width: 80%
 			margin: 0
 			+tablet
-				font-size: 37px
+				font-size: 27px
 				max-width: 1000px
+			+desktop
+				font-size: 37px
 	section.hero-ctas
 		display: grid
 		grid-template-columns: 100%
@@ -42,6 +50,12 @@ body.missions
 			flex-direction: column
 			color: #E0DFDE
 			text-align: center
+			padding: 0px
+			margin: 10px
+			+tablet
+				margin: 20px
+			+desktop
+				margin: 40px
 			img
 				height: 80px
 				width: auto
@@ -126,36 +140,41 @@ body.missions
 	section.schedule
 		background: url(../img/missionsSchedule.png) no-repeat center center
 	  background-size: cover
-		padding: 50px
+		padding: 40px
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
 		height: auto
 		+tablet
-			padding: 40px 100px
-			height: 500px
+			padding: 50px 100px
+			height: auto
 		+desktop
 			padding: 50px 200px
-			max-height: 350px
 		.leftSchedule
 			text-align: center
-			width: 100%
 			+tablet
 				width: 200px
-				float: left
 				margin-top: 40px
+			+desktop
+				margin-right: 130px
 			img
 				margin-bottom: 35px
+				height: 50px
+				+desktop
+					height: 100px
 			a.call
 				background: #C09363
 				border-radius: 5px
 				color: white
-				padding: 12px 24px
+				padding: 6px 12px
 				text-transform: uppercase
 				text-decoration: none
+				+tablet
+					padding: 12px 24px
 		.rightSchedule
-			width: 100%
 			margin-top: 20px
 			+tablet
 				width: 700px
-				float: right
 				margin-top: 40px
 			+desktop
 				margin-top: 40px
@@ -172,62 +191,62 @@ body.missions
 				+tablet
 					line-height: 30px
 					font-size: 20px
-section.missionTrip
-	background: url(../img/missionsTripBG.jpg) no-repeat center center
-	background-size: cover
-	padding: 50px
-	height: auto
-	+tablet
-		padding: 40px 100px
-		height: 550px
-	+desktop
-		padding: 90px 200px
-	h2
-		font-size: 40px
+	section.missionTrip
+		background: url(../img/missionsTripBG.jpg) no-repeat center center
+		background-size: cover
+		padding: 50px
+		height: auto
 		+tablet
-			font-size: 50px
-		color: #E0DFDE
-	.content
-		width: 100%
-		+tablet
-			width: 560px
-		p
-			font-size: 16px
-			line-height: 24px
-			color: #E0DFDE
+			padding: 40px 100px
+			height: 550px
+		+desktop
+			padding: 90px 200px
+		h2
+			font-size: 40px
 			+tablet
-				line-height: 30px
+				font-size: 50px
+			color: #E0DFDE
+		.content
+			width: 100%
+			+tablet
+				width: 560px
+			p
+				font-size: 16px
+				line-height: 24px
+				color: #E0DFDE
+				+tablet
+					line-height: 30px
+					font-size: 20px
+	section.missionAttend
+		background: url(../img/missionsAttend.jpg) no-repeat center center
+		background-size: cover
+		padding: 20px
+		height: auto
+		text-align: center
+		+tablet
+			padding: 40px 100px
+		+desktop
+			padding: 80px 200px
+		h2
+			font-size: 30px
+			color: #3C4C55
+			+tablet
+				font-size: 50px
+		p
+			color: #5A453A
+			max-width: 570px
+			font-weight: 600
+			margin: auto
+			font-size: 16px
+			+tablet
 				font-size: 20px
-section.missionAttend
-	background: url(../img/missionsAttend.jpg) no-repeat center center
-	background-size: cover
-	padding: 20px
-	height: auto
-	text-align: center
-	+tablet
-		padding: 40px 100px
-	+desktop
-		padding: 80px 200px
-	h2
-		font-size: 30px
-		color: #3C4C55
-		+tablet
-			font-size: 50px
-	p
-		color: #5A453A
-		max-width: 570px
-		font-weight: 600
-		margin: auto
-		font-size: 16px
-		+tablet
-			font-size: 20px
-	.linkImages
-		margin: 40px
-	img.left
-		margin: 5px
-		+tablet
-			margin: 20px
-	img.right
-		margin: 5px
-		+tablet
-			margin: 20px
+		.linkImages
+			margin: 40px
+		img.left
+			margin: 5px
+			+tablet
+				margin: 20px
+		img.right
+			margin: 5px
+			+tablet
+				margin: 20px
