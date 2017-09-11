@@ -1,0 +1,56 @@
+body.about
+  section.heroAbout
+    background: url(../img/aboutHeroBG.jpg) no-repeat center center
+    background-size: cover
+    text-align: center
+    height: auto
+    padding: 140px 20px 60px 20px
+    +tablet
+      height: auto
+      padding: 150px 100px
+    +desktop
+      height: 900px
+      padding: 300px 200px
+    .heroBlurbs
+      width: 200px
+      height: auto
+      margin: auto
+      display: flex
+      flex-wrap: wrap
+      flex-flow: column
+      grid-template: 4
+      align-items: center
+      +tablet
+        width: 640px
+        margin-bottom: 40px
+        flex-flow: row
+      +desktop
+        width: 840px
+      .blurb
+        color: #E0DFDE
+        font-weight: 600
+        font-size: 14px
+        flex-wrap: wrap
+        flex-direction: column
+        +tablet
+          width: 160px
+        +desktop
+          width: 220px
+        img
+          margin-bottom: 20px
+        +tablet
+          font-size: 20px
+        +desktop
+          font-size: 26px
+    h1
+      color: #E0DFDE
+      margin-bottom: 0px
+      font-size: 30px
+      +tablet
+        font-size: 68px
+    p
+      color: #E0DFDE
+      font-weight: 600
+      font-size: 18px
+      +tablet
+        font-size: 30px
