@@ -111,28 +111,45 @@ body.about
   section.doctrine
     background: url(../img/aboutDoctrineBG.jpg) no-repeat center center
     background-size: cover
-    padding: 70px 200px
+    padding: 20px 20px
     text-align: center
-    height: 450px
+    height: auto
     color: #E0DFDE
+    +tablet
+      padding: 70px 200px
     h2
-      font-size: 50px
-    p
       font-size: 20px
+      +tablet
+        font-size: 30px
+      +desktop
+        font-size: 50px
+    p
+      font-size: 16px
       font-weight: 600
-      width: 670px
+      width: 100%
       margin: auto
-      margin-bottom: 75px
+      margin-bottom: 25px
+      +tablet
+        font-size: 20px
+        width: 80%
+        margin-bottom: 75px
+      +desktop
+        width: 670px
     a
       text-transform: uppercase
       text-decoration: none
       color: #E0DFDE
-      font-size: 15px
+      font-size: 12px
       font-weight: 500
       border: 1px solid #E0DFDE
       box-sizing: border-box
       border-radius: 5px
-      padding: 20px 40px
+      padding: 10px 20px
+      +tablet
+        padding: 20px 40px
+        font-size: 15px
     .pdf
       margin-bottom: -5px
       margin-right: 5px
+  section.missionaries
+    background-color: #3C4C55
