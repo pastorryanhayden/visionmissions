@@ -31,15 +31,13 @@ body.events
   section.missionTrip
     background: url(../img/eventsMissionTripBG.jpg) no-repeat center center
     background-size: cover
-    text-align: center
+    text-align: left
     height: auto
-    padding: 40px 20px 60px 20px
-    +tablet
-      height: auto
-      padding: 150px 100px
+    padding: 40px 10px
     +desktop
       height: auto
       padding: 100px 100px
+      text-align: center
     h2
       color: #3C4C55
       font-weight: 900
@@ -62,7 +60,6 @@ body.events
         margin-bottom: 60px
     .details
       width: 100%
-      text-align: center
       display: grid
       grid-gap: 10px
       grid-template-columns: 1fr
@@ -115,8 +112,6 @@ body.events
     text-align: center
     height: auto
     padding: 50px 10px
-    +tablet
-      height: auto
     +desktop
       height: auto
       padding: 70px 50px
@@ -157,3 +152,64 @@ body.events
       font-size: 15px
       padding: 12px 40px
       border-radius: 5px
+  section.worldEvangelismConf
+    background: url(../img/eventsWEC.jpg) no-repeat center center
+    background-size: cover
+    text-align: center
+    height: auto
+    padding: 50px 10px
+    +desktop
+      height: auto
+      padding: 70px 70px
+      text-align: center
+    h2
+      color: #3C4C55
+      font-weight: 800
+      font-size: 30px
+      margin-bottom: 10px
+      text-align: center
+      +tablet
+        font-size: 40px
+      +desktop
+        font-size: 64px
+        margin-bottom: 50px
+    .container
+      width: 100%
+      margin: 0 auto
+      display: grid
+      grid-template-columns: 1fr
+      grid-gap: 20px
+      img
+        margin: auto
+      +desktop
+        width: 1000px
+        grid-template-columns: 1fr 1fr
+      .details
+        text-align: center
+        color: #5A453A
+        +desktop
+          text-align: left
+        h4
+          font-weight: 600
+          font-size: 24px
+          +tablet
+            font-size: 30px
+          +desktop
+            margin-bottom: 10px
+        p
+          font-size: 16px
+          +tablet
+            font-size: 20px
+          +desktop
+            margin-bottom: 20px
+            line-height: 23px
+            width: 430px
+        a.register
+          border: 1px solid #5A453A
+          border-radius: 5px
+          text-transform: uppercase
+          color: #5A453A
+          font-weight: 700
+          font-size: 15px
+          text-decoration: none
+          padding: 12px 20px
