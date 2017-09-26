@@ -2,8 +2,8 @@
 layout: default
 body-class: missionaries
 ---
-<script src='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/v3.1.1/mapbox.css' rel='stylesheet' />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.40.1/mapbox-gl.css' rel='stylesheet' />
 <section class="missionaryHero">
   <h1>View Our Missionaries</h1>
   <h2>Learn more about our missionaries and the countries they are located in.</h2>
@@ -13,8 +13,18 @@ body-class: missionaries
     <h2>Interactive Missionary Map</h2>
     <p>Click on a pin to see a description of a missionary</p>
   </div>
+</section>
   <div id="map" class="mapSection">
   </div>
+<section class="interactiveMap">
+    <ul>
+      <li><a href=# class="continent">North America</a></li>
+      <li><a href=# class="continent">South America</a></li>
+      <li><a href=# class="continent">Europe</a></li>
+      <li><a href=# class="continent">Asia</a></li>
+      <li><a href=# class="continent">Africa</a></li>
+      <li><a href=# class="continent">Australia</a></li>
+    </ul>
   <div class="missionaryInfo">
     <h2>Learn More About The Holt Family</h2>
     <div class="missionaryDetails">
@@ -23,17 +33,24 @@ body-class: missionaries
       </div>
       <div class="details2">
         <p>The Holt family has served as church planters in Chile since 2005. Though their ministry several churches have been launched in the capital city and surrounding areas.</p>
-        <p class="link">www.BiblicalMissions.com</p>
-        <p class="link">www.fb.com/missionaryjasonholt</p>
-        <p class="link">www.twitter.com/jasonholt</p>
-        <p class="link">holt@biblicalmissions.com</p>
+        <p class="link"><a href="http://www.BiblicalMissions.com" target="_blank">www.BiblicalMissions.com</a></p>
+        <p class="link"><a href="http://www.BiblicalMissions.com" target="_blank">www.fb.com/missionaryjasonholt</a></p>
+        <p class="link"><a href="http://www.BiblicalMissions.com" target="_blank">www.twitter.com/jasonholt</a></p>
+        <p class="link"><a href="http://www.BiblicalMissions.com" target="_blank">holt@biblicalmissions.com</a></p>
       </div>
     </div>
     <a href="" class="giveBtn">Give to the Holts</a>
   </div>
 </section>
 <script>
-L.mapbox.accessToken = 'pk.eyJ1IjoiZXN0ZXZhbm1vbnRveWEiLCJhIjoiY2o4MGZ2Y2EyNmdvejMzcW5tZzdkcnllMSJ9.oCsVxMFGnu9KhzV1Cs3x9Q';
-var map = L.mapbox.map('map', 'mapbox.streets')
-    .setView([40, -74.50], 9);
+mapboxgl.accessToken = 'pk.eyJ1IjoiZXN0ZXZhbm1vbnRveWEiLCJhIjoiY2o4MGZ2Y2EyNmdvejMzcW5tZzdkcnllMSJ9.oCsVxMFGnu9KhzV1Cs3x9Q';
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/estevanmontoya/cj80zy4i887812sqp0i0fhpvv', //stylesheet location
+    center: [18, 33], // starting position
+    zoom: 1.2 // starting zoom
+});
+
+// disable map zoom when using scroll
+map.scrollZoom.disable();
 </script>
