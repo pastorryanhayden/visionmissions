@@ -28,6 +28,7 @@ body.missionaries
         font-size: 30px
       +desktop
         font-size: 40px
+  //// Start of Interactive Map
   .mapSection
     width: 100%
     height: 650px
@@ -40,8 +41,7 @@ body.missionaries
     padding: 40px 10px
     +desktop
       height: auto
-      padding: 100px 100px
-      text-align: center
+      padding: 100px 50px
     h2
       color: #3C4C55
       font-weight: 900
@@ -51,6 +51,10 @@ body.missionaries
         font-size: 40px
       +desktop
         font-size: 64px
+    p
+      font-size: 30px
+      font-weight: 700
+      color: #5A453A
     ul
       display: flex
       flex-direction: row
@@ -66,32 +70,72 @@ body.missionaries
         text-decoration: none
       li
         margin: 0px 10px
+    //// Start of Mission Infomation Section
     .missionaryInfo
-      padding-top: 40px
-      h2
-        margin-bottom: 40px
-    .missionaryDetails
       display: grid
-      grid-gap: 30px
-      grid-template-columns: 1fr 3fr
-      width: 1000px
-      margin: auto
-      .details1
-        width: 400px !important
-        img
-          width: 400px
-          height: auto
-      .details2
-        text-align: left
-        p
-          font-size: 30px
-          font-weight: 700
+      grid-template-columns: 360px 3fr
+      grid-gap: 20px
+      padding-top: 40px
+      //// Start of Missionaries LIST styles
+      .scrollMissionaries
+        padding-top: 10px
+        padding-left: 0px
+        border-right: 1px solid #000000
+        ul
+          padding: 30px 0px
+          margin: 0px
+          .missionaryPreview
+            display: grid
+            grid-template-columns: 80px auto
+            grid-gap: 10px
+            padding: 0px
+            margin: 0px 0px 20px 0px
+            .missionaryBasic
+              padding: 10px 0px 0px
+              h4
+                font-size: 24px
+                margin-bottom: 0px
+              p
+                font-size: 18px
+                color: #3C4C55
+                font-weight: 300
+                margin: 0px
+                ////End of List Styles
+      //// Start of INDIVIDUAL Mission Infomation Section
+      .individualMissionary
+        // padding-top: 40px
+        h2
+          // margin-bottom: 40px
+        h3
           color: #5A453A
-        p.link
-          font-size: 18px
-          margin-bottom: 10px
-          padding: 0px
-      margin-bottom: 60px
+          font-weight: bold
+          font-size: 30px
+      .missionaryDetails
+        display: grid
+        grid-gap: 30px
+        grid-template-columns: 1fr 3fr
+        width: auto
+        margin: auto
+        .details1
+          width: 300px !important
+          img
+            width: 300px
+            height: auto
+        .details2
+          text-align: left
+          p
+            font-size: 30px
+            font-weight: 300
+            color: #5A453A
+            line-height: 30px
+          p.link
+            font-size: 18px
+            margin-bottom: 6px
+            padding: 0px
+            a
+              color: #3C4C55
+              text-decoration: none
+        margin-bottom: 40px
     a.giveBtn
       border: 1px solid #5A453A
       border-radius: 5px
