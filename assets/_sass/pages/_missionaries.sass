@@ -73,9 +73,11 @@ body.missionaries
     //// Start of Mission Infomation Section
     .missionaryInfo
       display: grid
-      grid-template-columns: 360px 3fr
+      grid-template-columns: 1fr
       grid-gap: 20px
       padding-top: 40px
+      +desktop
+        grid-template-columns: 360px 3fr
       //// Start of Missionaries LIST styles
       .scrollMissionaries
         padding-top: 10px
@@ -86,26 +88,31 @@ body.missionaries
           margin: 0px
           .missionaryPreview
             display: grid
-            grid-template-columns: 80px auto
+            grid-template-columns: 40px auto
             grid-gap: 10px
             padding: 0px
             margin: 0px 0px 20px 0px
+            +desktop
+              grid-template-columns: 80px auto
             .missionaryBasic
-              padding: 10px 0px 0px
+              padding: 4px 0px 0px
+              +desktop
+                padding: 10px 0px 0px
               h4
-                font-size: 24px
+                font-size: 16px
                 margin-bottom: 0px
+                +desktop
+                  font-size: 24px
               p
-                font-size: 18px
+                font-size: 12px
                 color: #3C4C55
                 font-weight: 300
                 margin: 0px
+                +desktop
+                  font-size: 18px
                 ////End of List Styles
       //// Start of INDIVIDUAL Mission Infomation Section
       .individualMissionary
-        // padding-top: 40px
-        h2
-          // margin-bottom: 40px
         h3
           color: #5A453A
           font-weight: bold
@@ -113,9 +120,11 @@ body.missionaries
       .missionaryDetails
         display: grid
         grid-gap: 30px
-        grid-template-columns: 1fr 3fr
+        grid-template-columns: 1fr
         width: auto
         margin: auto
+        +tablet
+          grid-template-columns: 1fr 3fr
         .details1
           width: 300px !important
           img
@@ -124,10 +133,13 @@ body.missionaries
         .details2
           text-align: left
           p
-            font-size: 30px
+            font-size: 20px
             font-weight: 300
             color: #5A453A
-            line-height: 30px
+            line-height: 20px
+            +tablet
+              font-size: 30px
+              line-height: 30px
           p.link
             font-size: 18px
             margin-bottom: 6px
