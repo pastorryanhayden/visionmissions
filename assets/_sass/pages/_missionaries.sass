@@ -55,27 +55,36 @@ body.missionaries
       font-size: 30px
       font-weight: 700
       color: #5A453A
-    ul
+    ul.continentList
       display: flex
       flex-direction: row
       flex-wrap: wrap
       justify-content: space-between
-      width: 80%
+      width: 100%
       color: #3C4C55
-      font-weight: 800
+      border-bottom: 1px solid #3C4C55
+      padding-bottom: 30px
+      font-weight: 300
       font-size: 25px
       margin: 25px auto 0px auto
+      +desktop
+        width: 80%
       a.continent
         color: #3C4C55
         text-decoration: none
       li
         margin: 0px 10px
+        font-size: 20px
+        text-transform: uppercase
+        .selected
+          background-color: #3C4C55
+          color: #E0DFDE
+          border-radius: 14px
+          padding: 2px 15px
     //// Start of Full List Of Missionaries
     .missonaryList
       padding-top: 10px
       padding-left: 0px
-      width: 100%
-      margin: auto
       ul
         padding: 30px 0px
         margin: 0px
@@ -86,6 +95,8 @@ body.missionaries
           grid-template-columns: 1fr 1fr
         +desktop
           grid-template-columns: 1fr 1fr 1fr
+          width: 1060px
+          grid-gap: 30px
         .missionaryPreview
           display: grid
           grid-template-columns: 40px auto
@@ -125,10 +136,18 @@ body.missionaries
         text-align: left
         padding-top: 10px
         padding-left: 0px
-        border-right: 1px solid #000000
+        border-bottom: 1px solid #000000
+        +desktop
+          border-right: 1px solid #000000
         ul
           padding: 30px 0px
           margin: 0px
+          display: grid
+          grid-template-columns: 1fr
+          +tablet
+            grid-template-columns: 1fr 1fr
+          +desktop
+            grid-template-columns: 1fr
           .missionaryPreview
             display: grid
             grid-template-columns: 40px auto

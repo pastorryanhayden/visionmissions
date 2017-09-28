@@ -1,6 +1,6 @@
 body.events
   section.heroEvents
-    background: url(../img/eventsHero.jpg) no-repeat center center
+    background: url(../img/eventsHeroBG.jpg) no-repeat center center
     background-size: cover
     text-align: center
     height: auto
@@ -125,20 +125,21 @@ body.events
       display: grid
       grid-gap: 10px
       grid-template-columns: 1fr
-      margin-bottom: 20px
-      margin-left: auto
-      margin-right: auto
+      margin: 0px auto 20px auto
       width: 100%
       +desktop
-        grid-template-columns: 1fr 1fr 1fr
-        width: 1200px
+        grid-template-columns: 1fr 1fr
+        margin: auto
+        width: 1000px
       .tripBlurb
         width: 100%
         color: #5A453A
         +desktop
-          width: 330px
+          width: 500px
       h4
-        font-size: 30px
+        font-size: 24px
+        +desktop
+          font-size: 30px
       p
         font-size: 16px
         +tablet
