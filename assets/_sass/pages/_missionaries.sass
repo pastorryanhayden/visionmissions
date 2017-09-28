@@ -36,12 +36,12 @@ body.missionaries
   section.interactiveMap
     background: url(../img/missionariesMapBG.jpg) no-repeat center center
     background-size: cover
-    text-align: left
+    text-align: center
     height: auto
-    padding: 40px 10px
+    padding: 20px 10px
     +desktop
       height: auto
-      padding: 100px 50px
+      padding: 50px 50px
     h2
       color: #3C4C55
       font-weight: 900
@@ -64,12 +64,54 @@ body.missionaries
       color: #3C4C55
       font-weight: 800
       font-size: 25px
-      margin: 35px auto 0px auto
+      margin: 25px auto 0px auto
       a.continent
         color: #3C4C55
         text-decoration: none
       li
         margin: 0px 10px
+    //// Start of Full List Of Missionaries
+    .missonaryList
+      padding-top: 10px
+      padding-left: 0px
+      width: 100%
+      margin: auto
+      ul
+        padding: 30px 0px
+        margin: 0px
+        display: grid
+        margin: auto
+        grid-template-columns: 1fr
+        +tablet
+          grid-template-columns: 1fr 1fr
+        +desktop
+          grid-template-columns: 1fr 1fr 1fr
+        .missionaryPreview
+          display: grid
+          grid-template-columns: 40px auto
+          grid-gap: 10px
+          padding: 0px
+          margin: 0px 0px 20px 0px
+          text-align: left
+          +tablet
+            grid-template-columns: 80px auto
+          .missionaryBasic
+            padding: 4px 0px 0px
+            +tablet
+              padding: 10px 0px 0px
+            h4
+              font-size: 16px
+              margin-bottom: 0px
+              +tablet
+                font-size: 24px
+            p
+              font-size: 12px
+              color: #3C4C55
+              font-weight: 300
+              margin: 0px
+              +tablet
+                font-size: 18px
+              ////End of List Styles
     //// Start of Mission Infomation Section
     .missionaryInfo
       display: grid
@@ -78,8 +120,9 @@ body.missionaries
       padding-top: 40px
       +desktop
         grid-template-columns: 360px 3fr
-      //// Start of Missionaries LIST styles
+      //// Start of Scroll List of Missionaries
       .scrollMissionaries
+        text-align: left
         padding-top: 10px
         padding-left: 0px
         border-right: 1px solid #000000
@@ -113,6 +156,7 @@ body.missionaries
                 ////End of List Styles
       //// Start of INDIVIDUAL Mission Infomation Section
       .individualMissionary
+        text-align: left
         h3
           color: #5A453A
           font-weight: bold
